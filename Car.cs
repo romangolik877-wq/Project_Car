@@ -5,36 +5,45 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 
 namespace ConsoleApp5
 {
-    class Сar
+    public abstract class Сar
     {
-        public Сar()
-        {
-
-        }
-        public Сar(int x)
-        {
-            Console.WriteLine("from Without Pra Cost");
-        }
-        public Сar(double y)
-        {
-            
-        }
+        #region Constractors
         private int Id;
         internal string Name;
-        protected  DateTime CreateDate;
+        protected DateTime CreateDate;
         protected internal double Price;
- 
-        
+
+        public virtual void Start(int orient,
+                                  int[] passenger,
+                                  params int[] speed)
+        {
+            #endregion
+
+            #region Felads
+
+            #endregion
+
+            #region Methods
+
+            #endregion
+
+        }
+
+
     }
-    
+
 }
-    
+
+
+
+
 
 
 
