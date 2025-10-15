@@ -14,31 +14,21 @@ namespace ConsoleApp5
 {
     public abstract class Сar
     {
-        #region Constractors
-        private int Id;
-        internal string Name;
-        protected DateTime CreateDate;
-        protected internal double Price;
+        int y;
+        int x;
+        int _id;
+        private float _name;
+        internal Double Salary = 50000;
+        internal protected string _description = "You can Write what you want in your life";
+        public DateTime Create;
+        internal static Boolean IsMan = true;
 
-        public virtual void Start(int orient,
-                                  int[] passenger,
-                                  params int[] speed)
+        protected virtual double Calculate(int num1, int num2)
         {
-            #endregion
-
-            #region Felads
-
-            #endregion
-
-            #region Methods
-
-            #endregion
-
+            return 0;
+           
         }
-
-
     }
-
 }
 
 
